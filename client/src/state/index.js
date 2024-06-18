@@ -10,8 +10,8 @@ const initialState = {
     expenses: [],
 };
 
-export const authSlice = createSlice({
-    name: "auth",
+export const appSlice = createSlice({
+    name: "app",
     initialState,
     reducers: {
         setMode: (state) => {
@@ -85,5 +85,5 @@ export const {
     setUpdateMessMenu,
     setExpenses,
     addExpense,
-} = authSlice.actions;
-export default authSlice.reducer;
+} = appSlice.actions;
+export default appSlice.reducer;
